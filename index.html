@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/icon.ico" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Guess The Flag</title>
+    </head>
+    <body>
+        <!--This Container Contains The Image Background-->
+        <div class="container">
+            <h1 class="title">Guess The Flag</h1>
+
+            <!--This Is The Table Box (Contains The Difficulty Levels)-->
+            <div class="buttons-box">
+                <div class="buttons">
+                    <h1>Choose The Difficulty</h1>
+                    <button id="easy" class="btn">Easy</button>
+                    <button id="normal" class="btn">Normal</button>
+                    <button id="hard" class="btn">Hard</button>
+                </div>
+            </div>
+
+            <!--This Is Game Board Div-->
+            <div class="game display-none">
+                <div class="game-box">
+                    <div class="time-and-score">
+                        <div class="time-box">
+                            <img src="images/timmer.png" alt="timmer-logo" />
+                            <h4><span id="time"></span> s</h4>
+                        </div>
+                        <div class="score-box">
+                            <h3>
+                                score : <span id="score"></span> /
+                                <span id="entireScore"></span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img id="image" src="" alt="" />
+                    </div>
+                    <div class="answers-buttons">
+                        <button class="answer"></button>
+                        <button class="answer"></button>
+                        <button class="answer"></button>
+                        <button class="answer"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--This Is The Result Box-->
+            <div class="game-result display-none">
+                <div>
+                    <h1 id="result-title"></h1>
+                    <button onclick="playAgain()">
+                        <span>Play Again</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
